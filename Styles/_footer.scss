@@ -1,0 +1,76 @@
+.Footer{
+    height:40vh ;
+    background: black;
+    color: White;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .FooterSec{
+    margin-top: 40px ;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    .FooterBlock{
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        .FooterTitle{
+            font-family: Futura_Medium;
+            font-size: 3rem;
+            font-weight: 100;
+        }
+        .FooterText{
+            font-family: Futura;
+            font-size: 1.5rem;
+            align-self: center;
+            cursor: pointer;
+        }
+    }
+    .FooterContact{
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        align-items: center;
+        .Hello{
+            font-family: Futura_Heavy;
+            font-size: 2rem;
+            }
+            input[type=text]{
+                width:150px;
+                height: 30px;
+                border:none;
+                outline:none;
+                padding:8px;
+                box-sizing:border-box;
+                transition:.3s;
+                font-size: 15px;
+                font-family: Futura;
+              }
+              input[type=text]:focus{
+                box-shadow:0 0 8px 0 gray;
+              } 
+         .Btn{
+            height: 40px ;
+            width: 120px;
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            font-family: Futura;
+            outline:none;
+            border: 1px solid;
+            cursor: pointer;
+            }
+            .Btn:hover{
+                background-color: white;
+                color: black;
+                transition: .5s ;
+            }
+        }
+    }
+        .Copy{
+            font-family: Futura_Italic;
+            align-self: center;
+            font-size: 1.2rem;
+            margin-top: 55px;
+        }
+}

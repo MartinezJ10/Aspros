@@ -1,0 +1,158 @@
+@import url(/Styles/fonts.css);
+@import "./footer";
+@import "./mixin";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.Block{
+    @include Block();
+    .MainTitle{
+        position: absolute;
+        color: $TextBlack;
+        left: 65%;
+        top: 20px;
+        z-index: 1;
+        .Title{
+            @include Title(10rem,normal);
+        }
+        .PhraseTitle {
+            font-family: Futura_Italic;
+            font-size: 2.3rem;
+            font-weight: 100;
+            text-align: right;
+            margin-top: 20px;
+        }
+    }
+    .Banner{
+        @include Banner();
+        .BannerImg{
+            @include BannerImg(1);
+        }
+    }
+}
+
+.Woman{
+    width: 40%;
+    margin: 50px;
+    object-fit: cover;
+}
+.Woman2{
+    width: 35%;
+    height: 50%;
+    margin: 50px;
+    margin-top: 20.4%;
+    object-fit: cover;
+}
+.Container{
+    position: absolute;
+    background: $TextBlack;
+    color: $TextWhite;
+    width: 25%;
+    height: 15%;
+    left: 57%;
+    top: 115%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .Title{
+        @include Title(50px,normal);
+    }
+}
+.Block2{
+    @include Block();
+    flex-direction: column;
+    background:$TextBlack ;
+    .Container2{
+        background:$TextWhite ;
+        color:  $TextBlack;
+        width: 80%;
+        left: 10%;
+        height: 12%;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        top: 210%;
+        align-items: center;
+            .Title2{
+           @include Title(50px,italic);
+            }
+    }
+    .ImgContainer{
+        display: flex;
+        margin: 20px;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        .Man{
+            width: 35%;
+            height: 65%;
+            object-fit: cover;  
+            margin-top: 10%;
+        }
+        .Woman3{
+            width: 54%;
+            height: 65%;
+            object-fit: cover;
+            margin-top: 10%;
+        }
+    }
+}
+
+.Block3{
+    @include Block2();
+    .Principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .PrincipalImg{
+            width: 70%;
+            height: 90%;
+            object-fit: cover;
+        }
+        .Shape{
+            z-index: -1;
+            position: absolute;
+            margin-left: 7.5%;
+            margin-top: 2.5%;
+            width: 58%;
+            height: 145%;
+            border: 2.5px solid black;
+        }
+    }
+    .Title3{
+        margin-top: 10%;
+        left: 3%;
+        position: absolute;     
+       @include Title(3.5rem,italic)
+    }
+}
+.Block4{
+    @include Block();
+    .ImgContainer2{
+        display: flex;
+        justify-content: space-evenly;
+        .ImgEnd{
+            margin: 20px;
+            width: 25%;
+            height: 65%;
+            object-fit: cover;
+        }
+        .Img2{
+              margin-top: 15%;
+          }
+}
+    .Title4{
+        left: 40%;
+        margin-top: 3%;
+        position: absolute;
+        justify-items: center;
+        text-align: center;
+        @include Title(3.5rem,bold)
+    }
+}

@@ -1,0 +1,269 @@
+@import url(/Styles/fonts.css);
+.Footer {
+  height: 40vh;
+  background: black;
+  color: White;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Footer .FooterSec {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .FooterSec .FooterBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 35%;
+}
+
+.Footer .FooterSec .FooterBlock .FooterTitle {
+  font-family: Futura_Medium;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.Footer .FooterSec .FooterBlock .FooterText {
+  font-family: Futura;
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.Footer .FooterSec .FooterContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .FooterSec .FooterContact .Hello {
+  font-family: Futura_Heavy;
+  font-size: 2rem;
+}
+
+.Footer .FooterSec .FooterContact input[type=text] {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 15px;
+  font-family: Futura;
+}
+
+.Footer .FooterSec .FooterContact input[type=text]:focus {
+  -webkit-box-shadow: 0 0 8px 0 gray;
+          box-shadow: 0 0 8px 0 gray;
+}
+
+.Footer .FooterSec .FooterContact .Btn {
+  height: 40px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-family: Futura;
+  outline: none;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.Footer .FooterSec .FooterContact .Btn:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Footer .Copy {
+  font-family: Futura_Italic;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  margin-top: 55px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.Block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.Block .Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.Block .Banner .BannerImg {
+  display: block;
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Block .MainTitle {
+  position: absolute;
+  color: black;
+  left: 50%;
+  top: 15%;
+  z-index: 1;
+}
+
+.Block .MainTitle .Title {
+  font-family: Futura;
+  font-size: 10rem;
+  font-weight: 100;
+}
+
+.Block .MainTitle .PhraseTitle {
+  font-family: Futura_Italic;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+.Block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.Block .Man {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Block .MainForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Block .MainForm .FormTitle {
+  font-family: Futura_Medium;
+  font-size: 2.5rem;
+  font-weight: 100;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.Block .MainForm .FormBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Block .MainForm .FormBlock .label {
+  font-family: Futura;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.Block .MainForm .FormBlock .input {
+  font-family: Futura;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 500px;
+  height: 40px;
+  border: solid black 2px;
+  padding-left: 7px;
+}
+
+.Block .MainForm .FormBlock .textarea {
+  resize: none;
+  padding-left: 7px;
+  font-family: Futura;
+  font-size: 1.5rem;
+  text-align: left;
+  height: 150px;
+  border: solid black 2px;
+}
+
+.Block .MainForm .btn {
+  height: 50px;
+  width: 180px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Futura;
+  outline: none;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.Block .MainForm .btn:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+/*# sourceMappingURL=Contact.css.map */

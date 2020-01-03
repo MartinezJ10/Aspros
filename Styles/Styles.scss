@@ -1,0 +1,197 @@
+@import url(/Styles/fonts.css);
+@import "./footer";
+@import "./mixin";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.Block{
+    @include Block();
+    .MainTitle{
+        position: absolute;
+        color: $TextWhite;
+        left: 55%;
+        top: 20px;
+        z-index: 1;
+        .Title{
+            font-family: Futura;
+            font-size: 10rem;
+            font-weight: 100;
+        }
+        .PhraseTitle {
+            font-family: Futura_Italic;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+    }
+    .Menu{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        .List{
+            margin-top: 8px;
+        }
+            .List a{ 
+                list-style: none;
+                color: white;
+                text-decoration: none;
+                font-size: 2.9rem;
+                font-family: Futura_Medium;
+                cursor: pointer;
+                letter-spacing: 2px;
+            } 
+            .Underline::after{
+                content: "";
+                width: 0%;
+                height: 2px;
+                display: block;
+                bottom: 0%;
+                left: 50%;
+                transition: all 500ms ease;
+                background: white;
+            } 
+            .Underline:hover::after{
+                left: 0%;
+                width: 100%;
+            }  
+        }
+        .Banner{
+            @include Banner();
+            .BannerImg{
+                @include BannerImg(0.7);
+            }
+        }
+    }
+
+    .Block{
+       @include Block();
+        .Object{
+          @include Object(30%);
+            .PhraseHeavy{
+                @include HeavyPhrase();
+            }
+        }
+        .Woman{
+            width: 30%;
+            object-fit: cover;
+        }
+        .MainText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10%;
+            .Subtitle{
+                @include Subtitle();
+                float: none;
+                margin-bottom: 50px;
+            }
+            .BodyText{
+                @include BodyText(center);
+            }
+        }  
+    }
+
+    .Object2{
+        @include Object(100%);
+        .PhraseHeavy2{
+            @include HeavyPhrase()
+        }
+    }
+    .Compound{
+        display: flex;
+        position: relative;
+        .Woman2{
+            object-fit: cover;
+            margin-left: 30px;
+            width:80%;
+        }
+        .Shape{
+            z-index: -1;
+            position: absolute;
+            margin-top: 9%;
+            margin-left: 50% ;
+            width: 40%;
+            height: 85%;
+            border: 2.5px solid black;
+        }
+    }
+    .Block{
+        @include Block();
+        .MainText2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5%;
+            width: 240%;
+            .Subtitle2{
+                @include Subtitle();
+            }
+            .BodyText2{
+                @include BodyText(right);
+                float: none;
+                margin-top: 25px;
+            }
+        }
+        .Compound2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .Man{
+                width: 50%;
+                height: 80%;
+                object-fit: cover;
+            }
+            .Shape2{
+                z-index: -1;
+                position: absolute;
+                width: 25%;
+                height: 75%;
+                margin-left: 1.8%;
+                margin-top: 2.5%;
+                border: 2.5px solid black;
+                
+            }
+        }
+    }
+    
+    .Block2{
+        @include Block2();
+        flex-direction: column;
+        margin-top: 25px;
+        .Man2{
+            width: 95%;
+            height: 40%;
+            object-fit: cover;;
+            align-self: center;
+        }
+        .SubBlock{
+            display: flex;
+            margin-top: 25px;
+            margin-left: 8px;
+            .Women{
+                width: 25%;
+                height: 115%;
+                margin-left: 25px;
+                object-fit: cover;
+            }
+        }
+        .Object3{
+            @include Object(42%);
+            height: 115%;
+            margin-left: 25px;
+            .PhraseHeavy3{
+                @include HeavyPhrase();
+            }
+        }
+    }

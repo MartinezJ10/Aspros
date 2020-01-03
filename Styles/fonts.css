@@ -1,0 +1,16 @@
+@font-face{
+    font-family: Futura_Italic;
+    src: url(/Fonts/Futura\ Book\ Italic\ font.ttf);
+}
+@font-face{
+    font-family: Futura_Heavy;
+    src: url(/Fonts/Futura\ Heavy\ Italic\ font.ttf);
+}
+@font-face{
+    font-family: Futura_Medium;
+    src: url(/Fonts/futura\ medium\ bt.ttf);
+}
+@font-face{
+    font-family: Futura;
+    src: url(/Fonts/Futura\ Book\ font.ttf);
+}

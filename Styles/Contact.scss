@@ -1,0 +1,100 @@
+@import url(/Styles/fonts.css);
+@import "./footer";
+@import "./mixin";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.Block{
+    @include Block();
+    .Banner{
+        @include Banner();
+        .BannerImg{
+            display: block;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .MainTitle{
+        position: absolute;
+        color: $TextBlack;
+        left: 50%;
+        top: 15%;
+        z-index: 1;
+        .Title{
+            font-family: Futura;
+            font-size: 10rem;
+            font-weight: 100;
+        }
+        .PhraseTitle {
+            font-family: Futura_Italic;
+            font-size: 2rem;
+            font-weight: 100;
+            text-align: right;
+        }
+    }
+}
+.Block{
+    @include Block();
+    .Man{
+        width: 40%;
+        object-fit: cover;
+    }
+    .MainForm{
+        display: flex;
+        flex-direction:column;
+        margin-left: 10%;
+        align-items: right;
+        justify-content: space-evenly;
+        .FormTitle{
+            @include Subtitle();
+            align-self: center;
+        }
+        .FormBlock{
+            display: flex;
+            flex-direction: column;
+            .label{
+                @include BodyText(left);
+            }
+            .input{
+                @include BodyText(left);
+                width: 500px;
+                height: 40px;
+                border: solid black 2px;
+                padding-left: 7px;
+            }
+            .textarea{
+                resize: none;
+                padding-left: 7px;
+                @include BodyText(left);
+                height: 150px;
+                border: solid black 2px;
+
+            }
+        }
+        .btn{
+            height: 50px ;
+            width: 180px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            align-self: center;
+            font-family: Futura;
+            outline:none;
+            border: 1px solid;
+            cursor: pointer;
+            }
+            .btn:hover{
+                background-color: white;
+                color: black;
+                transition: .7s ;
+            }
+        }
+    }
